@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="container1">
+        <center>
+            <div class="container">
+                <p>Remove image background <span> automatically </span></p>
+
+                <!-- Add Card -->
+                <div class="card" id="addCard">
+                    <button>
+                        <input type="file" name="" id="fileInput" />
+                        Upload Image
+                    </button>
+                    <h4>Choose an image to remove the background</h4>
+                </div>
+
+                <!-- Display Card -->
+                <div class="card" id="displayCard">
+                    <div class="image-cont">
+                        <img id="display-img" src="" alt="" />
+                    </div>
+                    <button id="startBtn">Start</button>
+                </div>
+
+                <!-- Loading Card -->
+                <div class="card" id="loadingCard">
+                    <div class="loader"></div>
+                </div>
+
+                <!-- Download Card -->
+                <div class="card" id="downloadCard">
+                    <div class="image-cont">
+                        <img class="image-before" src="" alt="" />
+                        <img class="image-after" src="" alt="" />
+                    </div>
+                    <div style="display: flex; gap: 10px">
+                        <button id="uploadAnother">Upload Another</button>
+                        <button style="padding: 10px 40px">
+                            <a id="downloadHref" download="bg_removed_img"> Download </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="container-inside">
+                <div id="circle-small"></div>
+                <div id="circle-medium"></div>
+                <div id="circle-large"></div>
+                <div id="circle-xlarge"></div>
+            </div>
+    </div>
+    </center>
+    <script src="./script.js"></script>
+</body>
+
+</html>
